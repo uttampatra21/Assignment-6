@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- ! Internal CSS -->
+  <style>
+    main {
+      display: flex;
+      background-color: black;
+      color: #fff;
+    }
+    .left-gird {
+      width: 30%;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .right-grid {
+      width: 70%;
+      padding: 1rem;
+    }
+    .library-cont {
+      background-color: #242424;
+      padding: 1rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .library-cont button,
+    .button button {
+      background-color: white;
+      border: none;
+      outline: none;
+      color: #000;
+      padding: 10px 22px;
+      border-radius: 25px;
+      font-weight: 600;
+    }
+  </style>
+  <body>
+    <h3 style="padding: 1rem">
+      <strong
+        >1. Create a simple web page with some div tags and show differnt ways
+        to add CSS ....
+      </strong>
+    </h3>
+    <h4 style="padding: 1rem">Ans :</h4>
+    <main style="width: 100%; height: 100vh">
+      <!-- ! A website of spotify using Inline, Internal and External Css -->
+      <div class="left-gird">
+        <div class="left-gird-cont">
+          <div
+            class="home"
+            style="display: flex; align-items: center; gap: 10px"
+          >
+            <i class="bx bx-home-alt-2"></i> Home
+          </div>
+          <div
+            class="search"
+            style="display: flex; align-items: center; gap: 10px; opacity: 0.7"
+          >
+            <i class="bx bx-search"></i> Search
+          </div>
+        </div>
+        <div class="left-gird-cont---nth">
+          <div
+            class="library"
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <div class="" style="display: flex; align-items: center; gap: 1rem">
+              <i class="bx bx-library" style="color: #ffffff"></i>
+              <span>Your Library</span>
+            </div>
+            <div class="add"><i class="bx bxs-add-to-queue"></i></div>
+          </div>
+          <div class="library-cont">
+            <h4>Create your first playlist</h4>
+            <small>It's easy, we'll help you</small>
+            <div class="button"><button>Create playlist</button></div>
+          </div>
+          <div class="library-cont">
+            <h4>Let's find some podcasts to follow</h4>
+            <small>We'll keep you update on new episode</small>
+            <div class="button"><button>Browse podcasts</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="right-grid">
+        <div class="right-grid--content">
+          <header>
+            <div class="arrow">
+              <i class="bx bx-left-arrow" style="color: #ffffff"></i>
+              <i class="bx bx-right-arrow" style="color: #ffffff"></i>
+            </div>
+            <div class="nav-item">
+              <div class="button">
+                <button>Explore Premium</button>
+              </div>
+              <div class="button">
+                <button style="background-color: black; color: #fff">
+                  Explore Premium
+                </button>
+              </div>
+              <div class="bell">
+                <i
+                  class="bx bx-bell"
+                  style="color: #ffffff; background-color: #000; opacity: 0.8"
+                ></i>
+              </div>
+              <div class="user">
+                <i
+                  class="bx bx-user"
+                  style="color: #ffffff; background-color: #000"
+                ></i>
+              </div>
+            </div>
+          </header>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/question1.js"></script>
+  </body>
+</html>
